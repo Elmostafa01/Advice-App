@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 245, 245);
+    min-height: 100vh;
+}
+
+.main {
+    position: relative;
+    width: 400px;
+    min-width: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(255, 236, 236);
+    box-shadow: 0px 20px 40px rgba(255, 177, 177, 0.603), inset 10px 10px 20px rgba(255, 255, 255, 0.952) 
+}
+
+.main p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(250, 98, 98);
+}
+
+.main .advice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Capriola', sans-serif;
+    margin: 40px;
+    font-size: 1.5em;
+    color: rgb(107, 55, 55);
+    padding-bottom: 13px;
+}
+
+.main .btnDiv {
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+left: 50%;
+bottom: -1%;
+transform: translate(-50%, 50%);
+width: 80px;
+height: 80px;
+color: rgb(255, 255, 255);
+background: rgb(250, 98, 98);
+font-size: 1.5em;
+border-radius: 50vh;
+cursor: pointer;
+z-index: 2;
+transition: .2s;
+}
+
+.main .btnDiv:hover {
+    box-shadow: 0px 0px 20px rgb(252, 44, 96);
+    background-color:rgb(255, 50, 60);
+}
+
+.main .btnDiv:active {
+    background: rgb(163, 39, 39);
+    scale: 0.9;
+}
+
+@media  screen and (max-width: 414px) {
+    .main {
+        width:300px;
+    }
+}
